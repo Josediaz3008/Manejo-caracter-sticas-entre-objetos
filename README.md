@@ -1,0 +1,1 @@
+# Manejo-caracter-sticas-entre-objetos
