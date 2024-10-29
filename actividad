@@ -1,0 +1,51 @@
+Imagina que tienes el siguiente fragmento de código con dos clases en una aplicación de gestión de bibliotecas:
+
+class Usuario {
+    private String nombre;
+    private String direccion;
+    private int diasDeRetraso;
+
+    public Usuario(String nombre, String direccion) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+    }
+
+    public double calcularMulta() {
+        return diasDeRetraso * 2.5; 
+    }
+
+    public void aumentarDiasDeRetraso(int dias) {
+        this.diasDeRetraso += dias;
+    }
+}
+------------------------------------------------------------------------
+class Libro {
+    private String titulo;
+    private String autor;
+    private String ISBN;
+    private boolean prestado;
+
+    public Libro(String titulo, String autor, String ISBN) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.ISBN = ISBN;
+    }
+
+    public void prestarLibro() {
+        this.prestado = true;
+    }
+
+    public void devolverLibro() {
+        this.prestado = false;
+    }
+}
+------------------------------------------------------------------------
+Identifiquen: ¿Qué método o atributo podría trasladarse a otra clase? ¿Por qué?
+
+Discusión:
+
+¿Qué clase parece tener responsabilidades no relacionadas con su propósito principal?
+¿Dónde tendría más sentido calcular la multa por días de retraso?
+Justifiquen:
+
+Explica cuál sería la clase correcta para el método o atributo y el motivo de este cambio.
